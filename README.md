@@ -29,5 +29,23 @@ Supports:
 
 ---
 
+## 📁 Project Structure
+
+project/
+│
+├── main.py # Entry point (user interface + compiler usage)
+├── util/
+│ ├── core.py # Compiler class using ast.NodeVisitor
+│ ├── statements.py # Handlers for if, while, for, assign, etc.
+│ ├── expressions.py # Expression & operator translation
+│ └── functions.py # Function definition handling
+│
+├── test/ # Sample Python input test files
+│ └── test1.py # Example: add.py, condition.py, loop.py etc.
+│
+├── output/ # Generated C++ files are saved here
+│
+└── README.md # Project documentation
+
 
 
